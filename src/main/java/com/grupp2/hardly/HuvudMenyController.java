@@ -6,9 +6,9 @@ import javafx.scene.control.Label;
 
 public class HuvudMenyController {
     @FXML
-    Button Val5;
+    private Button Val5;
     @FXML
-    Button Val6;
+    private Button Val6;
     @FXML
-    Button Val7;
+    private Button Val7;
 }

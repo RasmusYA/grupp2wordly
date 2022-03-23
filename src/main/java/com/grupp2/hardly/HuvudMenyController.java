@@ -3,7 +3,7 @@ package com.grupp2.hardly;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 
-public class HelloController {
+public class HuvudMenyController {
     @FXML
     private Label welcomeText;
 

@@ -6,11 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="Hardly" />
+        <module name="grupp2wordly" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="Hardly" target="16" />
+      <module name="grupp2wordly" target="16" />
     </bytecodeTargetLevel>
   </component>
 </project>

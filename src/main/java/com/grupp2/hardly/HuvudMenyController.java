@@ -1,14 +1,14 @@
 package com.grupp2.hardly;
 
 import javafx.fxml.FXML;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 
 public class HuvudMenyController {
     @FXML
-    private Label welcomeText;
-
+    Button Val5;
     @FXML
-    protected void onHelloButtonClick() {
-        welcomeText.setText("Welcome to JavaFX Application!");
-    }
+    Button Val6;
+    @FXML
+    Button Val7;
 }

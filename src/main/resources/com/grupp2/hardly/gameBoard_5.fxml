@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -161,9 +162,48 @@
                   <Insets left="6.0" top="7.0" />
                </GridPane.margin>
             </Rectangle>
-            <TextField fx:id="testTextfield" mouseTransparent="true" onInputMethodTextChanged="#testText" opacity="0.0" pickOnBounds="false" />
-            <Label fx:id="testLabel" text="Label" />
+            <Label fx:id="L1R1" text="1">
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font></Label>
+            <Label fx:id="L2R1" text="1" GridPane.columnIndex="1">
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="L3R1" text="1" GridPane.columnIndex="2">
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="L4R1" text="1" GridPane.columnIndex="3">
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="L5R1" text="1" GridPane.columnIndex="4">
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
          </children>
       </GridPane>
+      <TextField fx:id="testTextfield" layoutX="227.0" layoutY="353.0" />
+      <Button fx:id="testbutten" layoutX="457.0" layoutY="353.0" mnemonicParsing="false" onAction="#testText" text="Button" />
    </children>
 </AnchorPane>

@@ -1,8 +1,14 @@
 package com.grupp2.hardly;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.stage.Stage;
 
 import java.io.IOException;
 
@@ -32,16 +38,17 @@ public class HuvudMenyController {
         h.changescene("scene 2.fxml");
     }
 
-//    public void openScene2(int wordLength) throws IOException {
-//        FXMLLoader loader = new FXMLLoader(getClass().getResource("scene2Controller.fxml"));
-//        Parent root = loader.load();
-//        scene2Controller crmController = loader.getController();
-//        //crmController.setWordLength(wordLength); // Sätter längden på ord i scene2 (setWordLength metoden är inte implementerad i scen2 än).
-//        Scene scene = new Scene(root);
-//        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-//        stage.setScene(scene);
-//        stage.centerOnScreen();
-//        stage.show();
-//    }
+    public void openScene2(ActionEvent event) throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/grupp2/hardly/scene2Controller.fxml"));
+        Parent root = loader.load();
+        scene2Controller crmController = loader.getController();
+        crmController.setWordlght(5);
+        Scene scene = new Scene(root);
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        stage.setUserData(5);
+        stage.setScene(scene);
+        stage.centerOnScreen();
+        stage.show();
+    }
 
 }

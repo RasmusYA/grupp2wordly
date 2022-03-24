@@ -26,6 +26,7 @@ public class scene2Controller implements Initializable {
     }
     public void hoppavidare() throws IOException {
         h.changescene("gameBoard_5.fxml");
+
     }
     public void test(){
         System.out.println(wordlght);

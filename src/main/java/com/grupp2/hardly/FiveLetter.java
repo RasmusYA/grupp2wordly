@@ -4,26 +4,27 @@ import javax.persistence.*;
 
 @Entity
 @Table(name = "fiveletter")
-public class FiveLetters {
+public class FiveLetter {
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", nullable = false)
-    private Long id;
+    private int id;
 
     @Column(name = "word")
     private String data;
 
-    public Long getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(int id) {
         this.id = id;
     }
 
-    public FiveLetters() {
+    public FiveLetter() {
 
     }
-    public FiveLetters(String s){
+    public FiveLetter(String s){
         data = s;
     }
 
@@ -33,5 +34,10 @@ public class FiveLetters {
 
     public void setData(String data) {
         this.data = data;
+    }
+
+    @Override
+    public String toString() {
+        return data;
     }
 }

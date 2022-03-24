@@ -10,8 +10,5 @@
         <module name="Hardly" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="grupp2wordly" target="16" />
-    </bytecodeTargetLevel>
   </component>
 </project>

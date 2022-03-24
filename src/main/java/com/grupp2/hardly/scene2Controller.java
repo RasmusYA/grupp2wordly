@@ -21,6 +21,9 @@ public class scene2Controller implements Initializable {
     private int wordlght;
     private String användernamnet;
     private HelloApplication h = new HelloApplication();
+    public void hoppaYillbaka() throws IOException {
+        h.changescene("HuvudMenyTest.fxml");
+    }
     public void hoppavidare() throws IOException {
         h.changescene("gameBoard_5.fxml");
     }

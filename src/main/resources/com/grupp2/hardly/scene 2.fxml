@@ -23,7 +23,7 @@
             <Font name="8-bit Arcade In" size="19.0" />
          </font>
       </Text>
-      <Button fx:id="gaTilbaka" layoutX="97.0" layoutY="276.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="134.0" text="Ga tillbaka ">
+      <Button fx:id="gaTilbaka" layoutX="97.0" layoutY="276.0" mnemonicParsing="false" onAction="#hoppaYillbaka" prefHeight="35.0" prefWidth="134.0" text="Ga tillbaka ">
          <font>
             <Font name="8-bit Arcade In" size="20.0" />
          </font>

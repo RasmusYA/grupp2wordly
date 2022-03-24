@@ -11,4 +11,8 @@ public class HuvudMenyController {
     private Button Val6;
     @FXML
     private Button Val7;
+
+    public void swapScene(){
+
+    }
 }

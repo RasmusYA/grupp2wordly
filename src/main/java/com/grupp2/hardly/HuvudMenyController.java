@@ -4,6 +4,8 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 
+import java.io.IOException;
+
 public class HuvudMenyController {
     @FXML
     private Button Val5;
@@ -11,18 +13,23 @@ public class HuvudMenyController {
     private Button Val6;
     @FXML
     private Button Val7;
+    private  scene2Controller s = new scene2Controller();
+    private HelloApplication h = new HelloApplication();
 
 
-    public void val5(){
-        openScene2(5);
+    public void val5() throws IOException {
+        s.setWordlght(5);
+        h.changescene("scene 2.fxml");
     }
 
-    public void val6(){
-        openScene2(6);
+    public void val6() throws IOException {
+        s.setWordlght(5);
+        h.changescene("scene 2.fxml");
     }
 
-    public void val7(){
-        openScene2(7);
+    public void val7() throws IOException {
+        s.setWordlght(5);
+        h.changescene("scene 2.fxml");
     }
 
 //    public void openScene2(int wordLength) throws IOException {

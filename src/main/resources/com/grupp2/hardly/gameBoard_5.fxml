@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
@@ -84,7 +86,7 @@
                   <Insets bottom="7.0" left="4.0" top="13.0" />
                </GridPane.margin>
             </Rectangle>
-            <Rectangle fx:id="R3S5" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="45.0" stroke="TRANSPARENT" strokeType="INSIDE" width="45.0" GridPane.columnIndex="4" GridPane.rowIndex="2">
+            <Rectangle fx:id="R3S4" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="45.0" stroke="TRANSPARENT" strokeType="INSIDE" width="45.0" GridPane.columnIndex="4" GridPane.rowIndex="2">
                <GridPane.margin>
                   <Insets bottom="7.0" left="6.0" top="9.0" />
                </GridPane.margin>
@@ -114,7 +116,7 @@
                   <Insets bottom="7.0" left="4.0" top="10.0" />
                </GridPane.margin>
             </Rectangle>
-            <Rectangle fx:id="R4S5" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="45.0" stroke="TRANSPARENT" strokeType="INSIDE" width="45.0" GridPane.columnIndex="4" GridPane.rowIndex="3">
+            <Rectangle fx:id="R5S5" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="45.0" stroke="TRANSPARENT" strokeType="INSIDE" width="45.0" GridPane.columnIndex="4" GridPane.rowIndex="3">
                <GridPane.margin>
                   <Insets bottom="7.0" left="6.0" top="13.0" />
                </GridPane.margin>
@@ -134,7 +136,7 @@
                   <Insets bottom="7.0" left="6.0" top="13.0" />
                </GridPane.margin>
             </Rectangle>
-            <Rectangle fx:id="R5S4" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="45.0" stroke="TRANSPARENT" strokeType="INSIDE" width="45.0" GridPane.columnIndex="3" GridPane.rowIndex="4">
+            <Rectangle fx:id="R4S4" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="45.0" stroke="TRANSPARENT" strokeType="INSIDE" width="45.0" GridPane.columnIndex="3" GridPane.rowIndex="4">
                <GridPane.margin>
                   <Insets left="6.0" top="7.0" />
                </GridPane.margin>
@@ -159,6 +161,8 @@
                   <Insets left="6.0" top="7.0" />
                </GridPane.margin>
             </Rectangle>
+            <TextField fx:id="testTextfield" mouseTransparent="true" onInputMethodTextChanged="#testText" opacity="0.0" pickOnBounds="false" />
+            <Label fx:id="testLabel" text="Label" />
          </children>
       </GridPane>
    </children>

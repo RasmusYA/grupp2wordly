@@ -3,6 +3,8 @@ package com.grupp2.hardly;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Rectangle;
 
@@ -14,6 +16,11 @@ import java.util.Random;
 import java.util.ResourceBundle;
 
 public class GameBoardController implements Initializable {
+
+    @FXML
+    public TextField testTextfield;
+    @FXML
+    public Label testLabel;
     @FXML
     private Button test;
     @FXML
@@ -31,7 +38,7 @@ public class GameBoardController implements Initializable {
 
 
     public void getRandomWord(){
-
+/*
         EntityManager em = ENTITY_MANAGER_FACTORY.createEntityManager();
         EntityTransaction transaction = null;
 
@@ -57,5 +64,12 @@ public class GameBoardController implements Initializable {
     public void initialize(URL url, ResourceBundle resourceBundle) {
 
 //        getRandomWord();
+    }
+
+ */
+    public void testText(){
+
+    testText.get
+
     }
 }

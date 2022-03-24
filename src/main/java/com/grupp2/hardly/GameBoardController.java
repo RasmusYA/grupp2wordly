@@ -1,9 +1,33 @@
-package com.grupp2.hardly;
 
-import javafx.scene.shape.Rectangle;
+public class GameBoardController implements Initializable {
+    private static final EntityManagerFactory ENTITY_MANAGER_FACTORY = Persistence.createEntityManagerFactory("hibernate");
+    private string theWord;
 
-public class GameBoardController {
 
+    public void getRandomWord(){
 
-    public static final Rectangle R1S1 = ;
+        EntityManager em = ENTITY_MANAGER_FACTORY.createEntityManager();
+        EntityTransaction transaction = null;
+        customerTableView.getItems().clear();
+        try {
+            transaction = em.getTransaction();
+            transaction.begin();
+
+            Random random = new Random();
+            int randomNumber = random.nextInt(4);
+            List<Customer> customerList = em.createNativeQuery("SELECT id FROM fiveletter", FiveLetter.class).getResultList();
+
+            transaction.commit();
+        } catch (Exception ex) {
+            if (transaction != null)
+                transaction.rollback();
+        } finally {
+            em.close();
+        }
+    }
+
+    @Override
+    public void initialize(URL url, ResourceBundle resourceBundle) {
+        getRandomWord();
+    }
 }

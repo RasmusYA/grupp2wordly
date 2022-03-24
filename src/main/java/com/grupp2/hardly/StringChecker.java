@@ -29,4 +29,17 @@ public class StringChecker {
 
         return result;
     }
+    int   SingleCheck(int pos, char c, String correctString) {
+        if (correctString.charAt(pos) == c) {
+            return 1;
+        }
+        if (correctString.charAt(pos) != c) {
+            for (int i = 0; i < correctString.length(); i++) {
+                if(correctString.charAt(i) == c) {
+                    return 2;
+                }
+            }
+        }
+        return 3;
+    }
 }

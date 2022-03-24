@@ -28,7 +28,7 @@
             <Font name="8-bit Arcade In" size="20.0" />
          </font>
       </Button>
-      <Button fx:id="acceptera" layoutX="359.0" layoutY="277.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="134.0" text="ACCEPTERA">
+      <Button fx:id="acceptera" layoutX="359.0" layoutY="277.0" mnemonicParsing="false" onAction="#hoppavidare" prefHeight="35.0" prefWidth="134.0" text="ACCEPTERA">
          <font>
             <Font name="8-bit Arcade In" size="20.0" />
          </font>

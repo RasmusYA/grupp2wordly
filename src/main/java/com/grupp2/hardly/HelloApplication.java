@@ -12,6 +12,7 @@ public class HelloApplication extends Application {
 
     private static Stage stg;
 
+
     @Override
     public void start(Stage stage) throws IOException {
         stg = stage;

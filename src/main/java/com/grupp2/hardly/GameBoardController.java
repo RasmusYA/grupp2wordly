@@ -25,6 +25,7 @@ public class GameBoardController implements Initializable {
     Rectangle[] rad4 = {R4S1,R4S2,R4S3,R4S4,R4S5};
     Rectangle[] rad5 = {R5S1,R5S2,R5S3,R5S4,R5S5};
 
+
     private static final EntityManagerFactory ENTITY_MANAGER_FACTORY = Persistence.createEntityManagerFactory("hibernate");
     private String theWord;
 
